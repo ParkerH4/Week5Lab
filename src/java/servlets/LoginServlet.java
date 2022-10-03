@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
-        String action = request.getParameter("action");
+        String action = request.getParameter("logout");
         String username = (String) session.getAttribute("username");
 
         if (action != null) {
